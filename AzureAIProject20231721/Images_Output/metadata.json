@@ -1,0 +1,85 @@
+[
+    {
+        "filename": "Buddy.png",
+        "filepath": "c:\\Users\\gonca\\Documents\\GitHub\\NOVA_AI\\AzureAIProject20231721\\Images_Input\\Buddy.png",
+        "uuid": "1201eb12-3bc2-4c28-abd8-80cf4b924780",
+        "description": "a white and blue toy",
+        "objects": [],
+        "tags": [
+            {
+                "name": "toy",
+                "confidence": 0.9279980659484863
+            },
+            {
+                "name": "animal figure",
+                "confidence": 0.9278744459152222
+            }
+        ],
+        "categories": [],
+        "faces": [],
+        "adult_content": {
+            "isAdultContent": false,
+            "isRacyContent": false,
+            "isGoryContent": false,
+            "adultScore": 0.007214635144919157,
+            "racyScore": 0.008476992137730122,
+            "goreScore": 0.0022583534009754658
+        },
+        "brands": [],
+        "colors": {
+            "dominant_foreground_color": "White",
+            "dominant_background_color": "White",
+            "accent_color": "071F38",
+            "dominant_colors": [
+                "White",
+                "Pink"
+            ]
+        },
+        "ocr_text": "",
+        "image_size_bytes": 1726768,
+        "image_dimensions": {
+            "width": 1024,
+            "height": 1024
+        }
+    },
+    {
+        "filename": "Captura de ecrã 2025-03-27 170649.png",
+        "filepath": "c:\\Users\\gonca\\Documents\\GitHub\\NOVA_AI\\AzureAIProject20231721\\Images_Input\\Captura de ecrã 2025-03-27 170649.png",
+        "uuid": "4bc98576-6c2e-459c-86f4-678cc55bd6b3",
+        "description": "logo",
+        "objects": [],
+        "tags": [
+            {
+                "name": "clipart",
+                "confidence": 0.9131960272789001
+            }
+        ],
+        "categories": [],
+        "faces": [],
+        "adult_content": {
+            "isAdultContent": false,
+            "isRacyContent": false,
+            "isGoryContent": false,
+            "adultScore": 0.0019505260279402137,
+            "racyScore": 0.00324915605597198,
+            "goreScore": 0.0015084504848346114
+        },
+        "brands": [],
+        "colors": {
+            "dominant_foreground_color": "White",
+            "dominant_background_color": "White",
+            "accent_color": "00CB00",
+            "dominant_colors": [
+                "White",
+                "Green",
+                "Black"
+            ]
+        },
+        "ocr_text": "",
+        "image_size_bytes": 9293,
+        "image_dimensions": {
+            "width": 853,
+            "height": 527
+        }
+    }
+]
