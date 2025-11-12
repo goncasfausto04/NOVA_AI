@@ -1,8 +1,8 @@
 [
     {
         "filename": "Buddy.png",
-        "filepath": "c:\\Users\\gonca\\Documents\\GitHub\\NOVA_AI\\AzureAIProject20231721\\Images_Input\\Buddy.png",
-        "uuid": "1201eb12-3bc2-4c28-abd8-80cf4b924780",
+        "filepath": "c:\\Users\\Goncalo\\Documents\\GitHub\\NOVA_AI\\AzureAIProject20231721\\Images_Input\\Buddy.png",
+        "uuid": "41cdc9d6-5616-4597-afc7-a9ac63a328ef",
         "description": "a white and blue toy",
         "objects": [],
         "tags": [
@@ -21,9 +21,9 @@
             "isAdultContent": false,
             "isRacyContent": false,
             "isGoryContent": false,
-            "adultScore": 0.007214635144919157,
-            "racyScore": 0.008476992137730122,
-            "goreScore": 0.0022583534009754658
+            "adultScore": 0.007214649114757776,
+            "racyScore": 0.008477007038891315,
+            "goreScore": 0.002258357824757695
         },
         "brands": [],
         "colors": {
@@ -44,8 +44,8 @@
     },
     {
         "filename": "Captura de ecrã 2025-03-27 170649.png",
-        "filepath": "c:\\Users\\gonca\\Documents\\GitHub\\NOVA_AI\\AzureAIProject20231721\\Images_Input\\Captura de ecrã 2025-03-27 170649.png",
-        "uuid": "4bc98576-6c2e-459c-86f4-678cc55bd6b3",
+        "filepath": "c:\\Users\\Goncalo\\Documents\\GitHub\\NOVA_AI\\AzureAIProject20231721\\Images_Input\\Captura de ecrã 2025-03-27 170649.png",
+        "uuid": "db751ccd-395d-411f-9213-a64f7bbb07af",
         "description": "logo",
         "objects": [],
         "tags": [
