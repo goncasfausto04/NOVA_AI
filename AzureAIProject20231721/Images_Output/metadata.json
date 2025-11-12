@@ -2,7 +2,7 @@
     {
         "filename": "Buddy.png",
         "filepath": "c:\\Users\\Goncalo\\Documents\\GitHub\\NOVA_AI\\AzureAIProject20231721\\Images_Input\\Buddy.png",
-        "uuid": "41cdc9d6-5616-4597-afc7-a9ac63a328ef",
+        "uuid": "36b420e5-8dfc-433d-9090-acaee6a4ddb1",
         "description": "a white and blue toy",
         "objects": [],
         "tags": [
@@ -45,7 +45,7 @@
     {
         "filename": "Captura de ecrã 2025-03-27 170649.png",
         "filepath": "c:\\Users\\Goncalo\\Documents\\GitHub\\NOVA_AI\\AzureAIProject20231721\\Images_Input\\Captura de ecrã 2025-03-27 170649.png",
-        "uuid": "db751ccd-395d-411f-9213-a64f7bbb07af",
+        "uuid": "f513f6b6-0909-4328-bf4e-c8a7a082ee06",
         "description": "logo",
         "objects": [],
         "tags": [
@@ -60,9 +60,9 @@
             "isAdultContent": false,
             "isRacyContent": false,
             "isGoryContent": false,
-            "adultScore": 0.0019505260279402137,
-            "racyScore": 0.00324915605597198,
-            "goreScore": 0.0015084504848346114
+            "adultScore": 0.0019505232339724898,
+            "racyScore": 0.0032491525635123253,
+            "goreScore": 0.0015084482729434967
         },
         "brands": [],
         "colors": {

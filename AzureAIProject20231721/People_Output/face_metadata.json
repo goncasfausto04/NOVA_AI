@@ -1,1 +1,147 @@
-{}
+{
+  "gonca3.jpg": {
+    "faces_detected": 2,
+    "faces": [
+      {
+        "face_id": "Face_0001",
+        "location": {
+          "left": 521,
+          "top": 432,
+          "width": 639,
+          "height": 810
+        },
+        "attributes": {
+          "head_pose": {
+            "pitch": -5.3,
+            "roll": 11.1,
+            "yaw": 8.4
+          },
+          "mask": {
+            "type": "noMask",
+            "nose_and_mouth_covered": false
+          },
+          "blur": {
+            "blur_level": "Low",
+            "value": 0.0
+          },
+          "quality_for_recognition": "High"
+        }
+      },
+      {
+        "face_id": "Face_0002",
+        "location": {
+          "left": 88,
+          "top": 616,
+          "width": 319,
+          "height": 420
+        },
+        "attributes": {
+          "head_pose": {
+            "pitch": -22.2,
+            "roll": -22.8,
+            "yaw": 45.8
+          },
+          "mask": {
+            "type": "noMask",
+            "nose_and_mouth_covered": false
+          },
+          "blur": {
+            "blur_level": "Medium",
+            "value": 0.78
+          },
+          "quality_for_recognition": "Low"
+        }
+      }
+    ]
+  },
+  "mada1.jpg": {
+    "faces_detected": 1,
+    "faces": [
+      {
+        "face_id": "Face_0003",
+        "location": {
+          "left": 383,
+          "top": 711,
+          "width": 545,
+          "height": 719
+        },
+        "attributes": {
+          "head_pose": {
+            "pitch": 9.5,
+            "roll": 4.9,
+            "yaw": -6.2
+          },
+          "mask": {
+            "type": "noMask",
+            "nose_and_mouth_covered": false
+          },
+          "blur": {
+            "blur_level": "Low",
+            "value": 0.0
+          },
+          "quality_for_recognition": "High"
+        }
+      }
+    ]
+  },
+  "mada2.jpg": {
+    "faces_detected": 1,
+    "faces": [
+      {
+        "face_id": "Face_0004",
+        "location": {
+          "left": 415,
+          "top": 399,
+          "width": 371,
+          "height": 491
+        },
+        "attributes": {
+          "head_pose": {
+            "pitch": 2.9,
+            "roll": 5.1,
+            "yaw": 8.3
+          },
+          "mask": {
+            "type": "noMask",
+            "nose_and_mouth_covered": false
+          },
+          "blur": {
+            "blur_level": "Low",
+            "value": 0.0
+          },
+          "quality_for_recognition": "High"
+        }
+      }
+    ]
+  },
+  "photo.jpg": {
+    "faces_detected": 1,
+    "faces": [
+      {
+        "face_id": "Face_0005",
+        "location": {
+          "left": 866,
+          "top": 467,
+          "width": 303,
+          "height": 433
+        },
+        "attributes": {
+          "head_pose": {
+            "pitch": -9.5,
+            "roll": 0.3,
+            "yaw": -1.4
+          },
+          "mask": {
+            "type": "noMask",
+            "nose_and_mouth_covered": false
+          },
+          "blur": {
+            "blur_level": "Low",
+            "value": 0.0
+          },
+          "quality_for_recognition": "High"
+        }
+      }
+    ]
+  }
+}
