@@ -1,85 +1,135 @@
-[
+{
+  "summary": {
+    "total_images": 3,
+    "processed_successfully": 3,
+    "failed": 0,
+    "processing_date": "2025-11-14T11:04:34.639161",
+    "confidence_threshold": 0.9
+  },
+  "photos": [
     {
-        "filename": "Buddy.png",
-        "filepath": "c:\\Users\\Goncalo\\Documents\\GitHub\\NOVA_AI\\AzureAIProject20231721\\Images_Input\\Buddy.png",
-        "uuid": "36b420e5-8dfc-433d-9090-acaee6a4ddb1",
-        "description": "a white and blue toy",
+      "filename": "Buddy.png",
+      "id": "69f5f41a-b1a5-4b3c-9907-b3b19add6552",
+      "description": "a white and blue toy",
+      "description_confidence": 0.314,
+      "dimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "file_size_kb": 1686.3,
+      "detected_content": {
         "objects": [],
         "tags": [
-            {
-                "name": "toy",
-                "confidence": 0.9279980659484863
-            },
-            {
-                "name": "animal figure",
-                "confidence": 0.9278744459152222
-            }
+          {
+            "name": "toy",
+            "confidence": 0.928
+          },
+          {
+            "name": "animal figure",
+            "confidence": 0.928
+          }
         ],
-        "categories": [],
-        "faces": [],
-        "adult_content": {
-            "isAdultContent": false,
-            "isRacyContent": false,
-            "isGoryContent": false,
-            "adultScore": 0.007214649114757776,
-            "racyScore": 0.008477007038891315,
-            "goreScore": 0.002258357824757695
-        },
-        "brands": [],
-        "colors": {
-            "dominant_foreground_color": "White",
-            "dominant_background_color": "White",
-            "accent_color": "071F38",
-            "dominant_colors": [
-                "White",
-                "Pink"
-            ]
-        },
-        "ocr_text": "",
-        "image_size_bytes": 1726768,
-        "image_dimensions": {
-            "width": 1024,
-            "height": 1024
-        }
+        "categories": []
+      },
+      "colors": {
+        "dominant": [
+          "White",
+          "Pink"
+        ],
+        "accent": "071F38"
+      },
+      "content_safety": {
+        "is_adult": false,
+        "is_racy": false,
+        "is_gory": false
+      },
+      "organized_into_folders": [
+        "animal figure",
+        "toy"
+      ]
     },
     {
-        "filename": "Captura de ecrã 2025-03-27 170649.png",
-        "filepath": "c:\\Users\\Goncalo\\Documents\\GitHub\\NOVA_AI\\AzureAIProject20231721\\Images_Input\\Captura de ecrã 2025-03-27 170649.png",
-        "uuid": "f513f6b6-0909-4328-bf4e-c8a7a082ee06",
-        "description": "logo",
+      "filename": "Captura de ecrã 2025-03-27 170649.png",
+      "id": "df6ba604-27ae-4bb1-a36b-ac9b83d45781",
+      "description": "logo",
+      "description_confidence": 0.48,
+      "dimensions": {
+        "width": 853,
+        "height": 527
+      },
+      "file_size_kb": 9.08,
+      "detected_content": {
         "objects": [],
         "tags": [
-            {
-                "name": "clipart",
-                "confidence": 0.9131960272789001
-            }
+          {
+            "name": "clipart",
+            "confidence": 0.913
+          }
         ],
-        "categories": [],
-        "faces": [],
-        "adult_content": {
-            "isAdultContent": false,
-            "isRacyContent": false,
-            "isGoryContent": false,
-            "adultScore": 0.0019505232339724898,
-            "racyScore": 0.0032491525635123253,
-            "goreScore": 0.0015084482729434967
-        },
-        "brands": [],
-        "colors": {
-            "dominant_foreground_color": "White",
-            "dominant_background_color": "White",
-            "accent_color": "00CB00",
-            "dominant_colors": [
-                "White",
-                "Green",
-                "Black"
-            ]
-        },
-        "ocr_text": "",
-        "image_size_bytes": 9293,
-        "image_dimensions": {
-            "width": 853,
-            "height": 527
-        }
+        "categories": []
+      },
+      "colors": {
+        "dominant": [
+          "White",
+          "Green",
+          "Black"
+        ],
+        "accent": "00CB00"
+      },
+      "content_safety": {
+        "is_adult": false,
+        "is_racy": false,
+        "is_gory": false
+      },
+      "organized_into_folders": [
+        "clipart"
+      ]
+    },
+    {
+      "filename": "Captura de ecrã 2025-04-24 174656.png",
+      "id": "0e3237f2-1fb1-436f-851b-2aabbf8c558c",
+      "description": "a person holding a baby",
+      "description_confidence": 0.44,
+      "dimensions": {
+        "width": 295,
+        "height": 315
+      },
+      "file_size_kb": 108.23,
+      "detected_content": {
+        "objects": [],
+        "tags": [
+          {
+            "name": "clipart",
+            "confidence": 0.947
+          },
+          {
+            "name": "cartoon",
+            "confidence": 0.927
+          },
+          {
+            "name": "animated cartoon",
+            "confidence": 0.917
+          }
+        ],
+        "categories": []
+      },
+      "colors": {
+        "dominant": [
+          "White",
+          "Brown"
+        ],
+        "accent": "BB5010"
+      },
+      "content_safety": {
+        "is_adult": false,
+        "is_racy": false,
+        "is_gory": false
+      },
+      "organized_into_folders": [
+        "animated cartoon",
+        "cartoon",
+        "clipart"
+      ]
     }
-]
+  ]
+}
