@@ -3,13 +3,13 @@
     "total_images": 3,
     "processed_successfully": 3,
     "failed": 0,
-    "processing_date": "2025-11-14T11:04:34.639161",
+    "processing_date": "2025-11-21T11:04:40.610449",
     "confidence_threshold": 0.9
   },
   "photos": [
     {
       "filename": "Buddy.png",
-      "id": "69f5f41a-b1a5-4b3c-9907-b3b19add6552",
+      "id": "36d6545f-b205-456e-a895-d04e6c09dce1",
       "description": "a white and blue toy",
       "description_confidence": 0.314,
       "dimensions": {
@@ -50,7 +50,7 @@
     },
     {
       "filename": "Captura de ecrã 2025-03-27 170649.png",
-      "id": "df6ba604-27ae-4bb1-a36b-ac9b83d45781",
+      "id": "db411306-aa33-4115-9bb2-98b9f5c2032a",
       "description": "logo",
       "description_confidence": 0.48,
       "dimensions": {
@@ -87,7 +87,7 @@
     },
     {
       "filename": "Captura de ecrã 2025-04-24 174656.png",
-      "id": "0e3237f2-1fb1-436f-851b-2aabbf8c558c",
+      "id": "4b7e5e15-136b-4dc8-9867-c99717639f81",
       "description": "a person holding a baby",
       "description_confidence": 0.44,
       "dimensions": {
