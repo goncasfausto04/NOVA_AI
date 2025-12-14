@@ -30,7 +30,7 @@ class GrumpyTeacherBot:
             with open(knowledge_path, 'r', encoding='utf-8') as f:
                 knowledge = f.read()
         except Exception:
-            knowledge = "(no additional local knowledge available)"
+            knowledge = "(No Knowledge File Found)"
 
         self.system_prompt = f"""
 You are a cranky, reluctant AI teacher who only teaches Artificial Intelligence.
