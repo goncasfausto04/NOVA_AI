@@ -3,10 +3,6 @@ import json
 from dotenv import load_dotenv
 from openai import AzureOpenAI
 
-# =======================
-# ENV + AZURE CONFIG
-# =======================
-
 load_dotenv()
 
 client = AzureOpenAI(
@@ -18,9 +14,7 @@ client = AzureOpenAI(
 MODEL_NAME = "gpt-4o"
 
 
-# =======================
 # TELEVISION CLASS
-# =======================
 
 class Television:
     def __init__(self):
@@ -29,11 +23,16 @@ class Television:
         self.brightness = 50
         self.current_channel = 1
         self.channel_list = {
-            1: "BBC",
-            2: "CNN",
-            3: "Discovery",
-            4: "National Geographic",
-            5: "HBO",
+            1: "RTP",
+            2: "RTP2",
+            3: "SIC",
+            4: "TVI",
+            5: "ARTV",
+            6: "CNN",
+            7: "CMTV",
+            8: "Disney Channel",
+            9: "Cartoon Network",
+            10: "Nickelodeon",
         }
 
     def turn_on(self):
@@ -84,127 +83,157 @@ class Television:
         )
 
 
-# =======================
 # TV AI BOT
-# =======================
 
 class TVAIBOT:
     def __init__(self, client: AzureOpenAI):
         self.client = client
-        self.pending_action = None
-
+        self.conversation_history = []
+        
+        # Updated system prompt with correct channel list
         self.system_prompt = """
-You are a TV control assistant.
-
-You must convert user requests into TV actions.
+You are a friendly TV control assistant that helps users control their television.
 
 Available actions:
-- turn_on
-- turn_off
+- turn_on / turn_off
 - set_volume (0–100)
 - set_brightness (0–100)
-- change_channel (1–5)
+- change_channel (1–10)
 - show_channels
 - get_status
 
 Channels:
-1=BBC, 2=CNN, 3=Discovery, 4=National Geographic, 5=HBO
+1 = RTP
+2 = RTP2
+3 = SIC
+4 = TVI
+5 = ARTV
+6 = CNN
+7 = CMTV
+8 = Disney Channel
+9 = Cartoon Network
+10 = Nickelodeon
 
-RULES:
-- If required info is missing, ask for it.
-- Do NOT guess values.
-- Respond ONLY with valid JSON.
-- No extra text.
+IMPORTANT RULES:
+1. Use conversation context to understand what the user wants
+2. If a user says "set it to 50" after asking about volume, infer they mean volume
+3. Only ask for clarification when truly ambiguous
+4. Be conversational but always return valid JSON
+5. Never guess critical values like channel numbers
+6. When user mentions a channel by name, map it to the correct number
 
 RESPONSE FORMATS:
-
 {"action": "turn_on"}
 {"action": "set_volume", "value": 30}
 {"action": "change_channel", "value": 5}
-{"ask": "question to ask the user"}
-{"error": "error message"}
+{"ask": "question to clarify"}
+{"error": "error description"}
 
-Examples:
-
-User: "I want to change channel"
-Response:
-{"ask": "Which channel? 1-BBC, 2-CNN, 3-Discovery, 4-National Geographic, 5-HBO"}
-
-User: "Set volume"
-Response:
-{"ask": "What volume level (0–100)?"}
+Example multi-turn:
+User: "I want to watch something"
+You: {"ask": "Which channel would you like? Available channels: 1-RTP, 2-RTP2, 3-SIC, 4-TVI, 5-ARTV, 6-CNN, 7-CMTV, 8-Disney Channel, 9-Cartoon Network, 10-Nickelodeon"}
+User: "CNN"
+You: {"action": "change_channel", "value": 6}
 """
 
     def process(self, user_input: str) -> dict:
-        response = self.client.chat.completions.create(
-            model=MODEL_NAME,
-            messages=[
-                {"role": "system", "content": self.system_prompt},
-                {"role": "user", "content": user_input},
-            ],
-            temperature=0,
+        # Add user message to conversation history
+        self.conversation_history.append(
+            {"role": "user", "content": user_input}
         )
-
-        content = response.choices[0].message.content
-
+        
+        # Build messages with system prompt + conversation history
+        messages = [
+            {"role": "system", "content": self.system_prompt}
+        ] + self.conversation_history
+        
         try:
+            response = self.client.chat.completions.create(
+                model=MODEL_NAME,
+                messages=messages,
+                temperature=0,
+            )
+            
+            content = response.choices[0].message.content
+            
+            # Add assistant response to history
+            self.conversation_history.append(
+                {"role": "assistant", "content": content}
+            )
+            
+            # Keep only last 10 messages to avoid token limits
+            if len(self.conversation_history) > 10:
+                self.conversation_history = self.conversation_history[-10:]
+            
             return json.loads(content)
+            
         except json.JSONDecodeError:
             return {"error": "AI returned invalid JSON."}
+        except Exception as e:
+            return {"error": f"API error: {str(e)}"}
 
 
-# =======================
-# EXECUTION LAYER
-# =======================
 
-def execute_action(tv: Television, result: dict) -> str:
+# EXECUTION
+
+
+def execute_action(tv: Television, result: dict) -> tuple[str, bool]:
+    """
+    Returns (response_message, is_question)
+    is_question tells us if AI is asking for clarification
+    """
     if "ask" in result:
-        return result["ask"]
+        return result["ask"], True
 
     if "error" in result:
-        return result["error"]
+        return result["error"], False
 
     action = result.get("action")
 
     if action == "turn_on":
-        return tv.turn_on()
+        return tv.turn_on(), False
     if action == "turn_off":
-        return tv.turn_off()
+        return tv.turn_off(), False
     if action == "set_volume":
-        return tv.set_volume(result["value"])
+        return tv.set_volume(result["value"]), False
     if action == "set_brightness":
-        return tv.set_brightness(result["value"])
+        return tv.set_brightness(result["value"]), False
     if action == "change_channel":
-        return tv.change_channel(result["value"])
+        return tv.change_channel(result["value"]), False
     if action == "show_channels":
-        return tv.show_channels()
+        return tv.show_channels(), False
     if action == "get_status":
-        return tv.get_status()
+        return tv.get_status(), False
 
-    return "Unknown action."
+    return "Unknown action.", False
 
 
-# =======================
-# MAIN LOOP
-# =======================
+# RUN THE BOT
 
-tv = Television()
-bot = TVAIBOT(client)
+# RUN THE BOT (only when run directly, not when imported)
 
-print("🤖 TV AI ready. Talk to it like a normal person. Type 'exit' to quit.")
+if __name__ == "__main__":
+    tv = Television()
+    bot = TVAIBOT(client)
 
-while True:
-    user_input = input("\nYou: ")
+    print("TV AI ready. Talk to it like a normal person. Type 'exit' to quit.")
+    print(f"Current Status: {tv.get_status()}\n")
 
-    if user_input.lower() in {"exit", "quit"}:
-        print("AI: Powering down. Bye 👋")
-        break
+    while True:
+        user_input = input("You: ")
 
-    ai_result = bot.process(user_input)
-    response = execute_action(tv, ai_result)
-    print("----------------------------------")
-    print("Current TV Status:")
-    print(tv.get_status())
-    print("-----------------------------------")
-    print("\n") 
-    print(f"AI: {response}")
+        if user_input.lower() in {"exit", "quit"}:
+            print("AI: Powering down. Bye 👋")
+            break
+
+        ai_result = bot.process(user_input)
+        response, is_question = execute_action(tv, ai_result)
+        
+        print(f"AI: {response}")
+        
+        if not is_question:
+            print("----------------------------------")
+            print(f"Current TV Status: {tv.get_status()}")
+            print("----------------------------------")
+        
+        print()  # Empty line for readability
