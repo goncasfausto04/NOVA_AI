@@ -1,1 +1,107 @@
-Empty
+# AI Professors and Experts Knowledge Base
+
+## Professor Vitor Santos
+**Current Position:** Associate Professor at NOVA IMS Information Management School (August 2025 - Present)
+**Previous Position:** Assistant Professor at Universidade Nova de Lisboa (September 2011 - August 2025, 14 years)
+**Location:** Lisboa, Portugal
+
+### Education:
+- **PhD in Technology Information Systems Science** - University of Minho
+- **DEA (Diploma de Estudios Avanzados)** - University of Minho
+- **M.Sc. in Information Systems Science** - University of Minho
+- **Postgraduate in Computer Science** - Science Faculty of Lisbon University
+- **Degree in Informatics Engineering** - Cocite
+- **Computer Specialist Title** - Polytechnic Institutes Guarda, Castelo Branco and Viseu
+
+### Academic Career:
+- **Associate Professor at NOVA IMS (August 2025 - Present):** Teaching Information Systems, Artificial Intelligence, and Digital Systems courses in Computer Science and Informatics Engineering Degrees
+- **Assistant Professor at Universidade Nova de Lisboa (September 2011 - August 2025):** 14 years of teaching and research
+- **Invited Professor at ISEGI - Instituto Superior de Estatística e Gestão de Informação (September 2011 - November 2018):** Taught Information Systems, Artificial Intelligence, and BPM courses
+- **Invited Professor at Universidade de Trás-os-Montes e Alto Douro (September 2010 - August 2012):** Taught Compilers, Artificial Intelligence, C++ programming, and Information Systems
+- **Invited Professor at Universidade Lusófona (2003 - 2012, 9 years):** Taught Compilers and Artificial Intelligence
+- **Invited Professor at Universidade Europeia (July 2011 - September 2011):** Taught Artificial Intelligence
+- **Invited Professor at Universidade do Minho (September 2010 - August 2011):** Taught Computer Networks and Information Systems
+
+### Industry Experience:
+- **Microsoft Portugal - Academic Computer Science Program Manager (January 2002 - May 2010, 8 years 5 months):** Responsible for research development, innovation, and teaching assistance in Portuguese universities. Supported access to Microsoft technologies, platforms, and tools for IT professionals project management. Microsoft innovation lead responsible for supporting local economy development and encouraging IT startup ideas.
+- **PyMarket Portugal (Santander bank) - Chief of Technical and Operations Office (August 2001 - October 2002):** Technology Manager and Operations Manager with responsibility for customer support, payments, logistics, and contact center management
+- **Coverlink Portugal - Chief of Technical Office (January 2001 - July 2001):** Technology Manager
+- **Eurolabor - Analyst (January 1999 - December 2000):** Software Engineering
+
+### Academic Contributions:
+- Integrates several national and international conferences scientific committees
+- Authored several academic publications
+- Elected member of the Portuguese Association of Engineers for the 3rd tenure
+
+### Technical Expertise (99+ endorsements):
+- **Artificial Intelligence** (77 endorsements)
+- **Algorithms** (91 endorsements)
+- **Software Engineering** (99+ endorsements)
+- **Computer Science** (99+ endorsements)
+- **Machine Learning** (14 endorsements)
+- **Programming Languages:** C#, C++, Java, Python, JavaScript, PHP, Perl
+- **Databases:** SQL, MySQL, Microsoft SQL Server
+- **Technologies:** .NET, Visual Studio, Linux, Windows, Git, UML
+- **Specialized Areas:** Data Mining, Computer Vision, Distributed Systems, Web Services, Agile Methodologies
+
+### Community Engagement:
+- **Co-host of "Building The Future - AI Portugal Podcast"** alongside Marco António Silva and Rui Quintino, discussing AI trends, applications, and societal impacts
+- Regular speaker at AI and technology events
+- Active mentor and advisor for AI projects
+- Bridge between academia and industry in AI development
+
+---
+
+## Professor Marco António Silva
+**Current Position:** Global Black Belt in Migrate & Modernize at Microsoft (EMEA) (October 2025 - Present)
+**Location:** Lisboa, Portugal
+**Education:** Master Engineer in Computer Engineering, Faculdade de Engenharia da Universidade do Porto (2003-2008)
+
+### Professional Background:
+- **AI Ambassador at Microsoft (July 2017 - October 2025):** Drives AI thought leadership and growth in the Portuguese market, engaging with AI specialized communities and universities as a speaker and trusted advisor
+- **National Innovation Officer at Microsoft Portugal (October 2023 - October 2025):** Ambassador for Innovation in Portugal, leading innovation strategy for Microsoft Portugal
+- **Senior Cloud Solution Architect at Microsoft (September 2022 - October 2025):** Technical advisor for Azure Cloud, helping customers architect complex cloud-native solutions
+- **Cloud Solution Architect at Microsoft (March 2021 - August 2022)**
+- **Digital Advisor at Microsoft (July 2016 - March 2021):** Providing advisory services for Telco and Retail customers
+
+### Academic Roles:
+- **Invited Professor at NOVA IMS Information Management School (September 2023 - Present):** Lectures on Artificial Intelligence in the Information Systems degree program, focusing on Microsoft Technologies such as Azure Cognitive Services and Azure OpenAI Services
+- **Invited Professor at ISEG - Lisbon School of Economics & Management (January 2018 - Present):** Teaches Data Mining and Machine Learning, Advanced Data Mining and Artificial Intelligence, and Data Science Project classes in the Post-Graduate Course in Data Science & Business Analytics. Part of the Course Managing Council
+
+### Content Creation & Community:
+- **Co-Founder and Co-Host of "The Innovation Office Webshow" (October 2024 - Present):** Partnership with AmCham and Altice Portugal, hosting interviews with Portuguese innovators
+- **Co-Founder and Blogger at Tech Alchemy Blog (October 2024 - Present):** Writes about Tech Innovation, AI, Leadership, and Product Development
+- **Founder & Host of "Building The Future - AI Portugal Podcast" (April 2020 - Present):** Podcast focused on AI and its impact, co-hosting with Rui Quintino and Vitor Santos
+
+### Expertise Areas:
+- Artificial Intelligence and Machine Learning
+- Azure Cloud Technologies (Azure AI, Azure OpenAI Services, Azure Cognitive Services)
+- Semantic Kernel and Agentic AI
+- Cloud Native Technologies (AKS, Container Apps, Serverless)
+- Application Modernization and Migration
+- .NET Technologies and C# Development
+- GitHub Copilot and Developer Tools
+
+### Notable Achievements:
+- Microsoft Gold Club Choice Award 2018
+- Co-author of research on breast cancer surgery with augmented reality (The Breast Article)
+- Senior Technical Leadership Program Alumni (Microsoft, 2022)
+- Microsoft Certified: Azure AI Engineer Associate
+- Active speaker at major tech events (Global Azure, Microsoft Build, Cloud Summit)
+
+### Volunteer Work:
+- **President of DICE Cultural (April 2017 - Present):** Non-profit association focused on cultural innovation and entertainment, particularly board games
+- **Podcaster & Host at DICE Podcast (March 2020 - Present):** One of the best Portuguese podcasts about board games
+
+---
+
+## Collaboration and Partnership
+Both Professor Vitor Santos and Marco António Silva collaborate extensively on AI education and community building in Portugal. They are co-hosts of the "Building The Future - AI Portugal Podcast," where they discuss cutting-edge AI topics, interview experts, and analyze how AI impacts different sectors including education, healthcare, technology, and business.
+
+Professor Vitor Santos brings deep academic expertise with a PhD in Information Systems and over 20 years of teaching experience across multiple Portuguese universities, while Marco António Silva provides industry perspective from his extensive work at Microsoft in AI, cloud technologies, and innovation leadership. Together, they represent a powerful bridge between academic research and practical AI implementation in Portugal.
+
+Both professors teach at NOVA IMS, making the institution a hub for AI education combining theoretical foundations with practical, industry-relevant applications using Microsoft Azure AI technologies.
+
+---
+
+*Last Updated: December 2025*
