@@ -14,7 +14,7 @@ client = AzureOpenAI(
 MODEL_NAME = "gpt-4o"
 
 
-# TELEVISION CLASS
+# TV CLASS
 
 class Television:
     def __init__(self):
@@ -89,8 +89,6 @@ class TVAIBOT:
     def __init__(self, client: AzureOpenAI):
         self.client = client
         self.conversation_history = []
-        
-        # Updated system prompt with correct channel list
         self.system_prompt = """
 You are a friendly TV control assistant that helps users control their television.
 
@@ -176,7 +174,6 @@ You: {"action": "change_channel", "value": 6}
 
 # EXECUTION
 
-
 def execute_action(tv: Television, result: dict) -> tuple[str, bool]:
     """
     Returns (response_message, is_question)
@@ -210,8 +207,6 @@ def execute_action(tv: Television, result: dict) -> tuple[str, bool]:
 
 # RUN THE BOT
 
-# RUN THE BOT (only when run directly, not when imported)
-
 if __name__ == "__main__":
     tv = Television()
     bot = TVAIBOT(client)
@@ -236,4 +231,4 @@ if __name__ == "__main__":
             print(f"Current TV Status: {tv.get_status()}")
             print("----------------------------------")
         
-        print()  # Empty line for readability
+        print()  

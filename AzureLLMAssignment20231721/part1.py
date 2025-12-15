@@ -2,10 +2,8 @@ import os
 from openai import AzureOpenAI
 from dotenv import load_dotenv
 
-# Load environment variables
 load_dotenv()
 
-# Azure OpenAI configuration
 endpoint = os.getenv("AZURE_OPENAI_ENDPOINT")
 model_name = "gpt-4o"
 deployment = model_name
