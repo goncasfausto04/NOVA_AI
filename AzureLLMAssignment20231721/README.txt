@@ -11,7 +11,7 @@ part1.py                 - Grumpy Teacher Bot code (can be ran separatly)
 part2.py                 - TV Control Bot code (can be ran separatly)
 knowledge.txt            - Knowledge base for Teacher Bot
 .env.example             - Environment variables template
-requirements.txt         - Python dependencies
+requirements.txt         - Python dependencies (python 3.14)
 
 SETUP INSTRUCTIONS
 ------------------
@@ -29,17 +29,8 @@ SETUP INSTRUCTIONS
 HOW TO RUN
 ----------
 GUI Version:
-   python main_gui.py
+   python interface.py
 
 Command Line:
    python part1.py  (for Grumpy Teacher)
    python part2.py  (for TV Bot)
-
-
-
-SUBMISSION
-----------
-Submit at: http://aka.ms/madasi-nova-ai-homework
-Deadline: December 21, 2025, 23:59
-
-================================================================================
